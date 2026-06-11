@@ -123,7 +123,8 @@ On the same test set, four models produce four qualitatively different failure p
 
 Negation markers (छैन, छैनन्, दैन, दैनन्, होइन, होइनन्, नाई, नगर्, नहुने, नभएको, नगरेको) appear in approximately 23–25% of failures across all four models including Llama. This consistency across architectures suggests dataset-level difficulty rather than model-specific weakness.
 
-**Important methodological note:** The corpus base rate of negation across all 10,200 MNLI-Nepali test rows has not yet been computed. This comparison is required before the enrichment claim can be made. If the base rate is close to 23–25%, the finding weakens significantly. This is the highest-priority pre-annotation computational task.
+**Important methodological note:** The corpus base rate of negation across all 10,200 MNLI-Nepali test rows is 25.2%. Negation appears in 25.2% of the training corpus AND in 24–25% of failures. Enrichment factor = ~1.0. This means negation is NOT more common in failures than in the overall dataset. The initial claim that "models specifically fail on negation" is not supported by corpus frequency alone. 
+ The question changed from "do models fail more often on negation sentences?" to "when a model fails on a negation sentence, is the negation the cause?" That's an annotation question, not a statistics question.
 
 ### Finding 4 — 69% ambiguous by dataset cartography (unusually high)
 
@@ -265,7 +266,6 @@ Add to Notebooks 02 and 03 respectively. Required before the RTE failure files c
 
 ## Pending Work
 
-- [ ] Negation base rate regex on full MNLI-Nepali test corpus
 - [ ] XNLI-Nepali inference (all models)
 - [ ] CHiPSAL-BERT and Llama inference on RTE-Nepali
 - [ ] 150 natively authored Nepali NLI pairs (3 native speakers, 4 domains: family hierarchy, rural agriculture, political discourse, urban code-switching) — required to populate T1b and T3a tiers
