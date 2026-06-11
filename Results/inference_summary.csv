@@ -1,0 +1,5 @@
+model,dataset,n_total,n_correct,n_failures,accuracy,failures_sampled,flag_romanization_count,flag_codeswitching_count,flag_negation_count
+xlmr,mnli,10200,8245,1955,0.8083,600,0,0,140
+xlmr,rte,503,324,179,0.6441,62,0,0,12
+mdeberta,mnli,10200,8239,1961,0.8077,600,0,0,143
+mdeberta,rte,503,303,200,0.6024,104,0,0,13

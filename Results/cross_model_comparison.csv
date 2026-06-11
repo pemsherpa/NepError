@@ -1,0 +1,2 @@
+Model,Failures (sampled),Negation-flagged,Code-switch-flagged,Roman-flagged,Top error
+Llama 3.1 8B,114,29,0,0,NEU→ENT
